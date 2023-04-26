@@ -23,7 +23,7 @@ const APP = {
 
         localStorage.setItem("yolcuVeri", JSON.stringify(this.gunSayac))
 
-        this.gunEl.textContent = `Total People: ${this.gunSayac.length} `
+        this.gunEl.textContent = `Total Days: ${this.gunSayac.length} `
     },
 
     baslat() {
@@ -42,7 +42,7 @@ const APP = {
                 this.gunSayac.push(elemanDegeri)
             })
 
-            this.gunEl.textContent = `Total People: ${yolcuVeri.length} `
+            this.gunEl.textContent = `Total Days: ${yolcuVeri.length} `
         }
 
         this.arttirButonu.addEventListener('click', () => { this.increment() })
